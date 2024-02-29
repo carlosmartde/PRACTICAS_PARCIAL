@@ -3,16 +3,15 @@ using namespace std;
 
 
 int main() {
+    int numero;
+    cout<<"ingrese el numero:"<<endl;
+    cin>>numero;
 
-int numero;
-cout<<"INGRESE UN NUMERO: "<<endl;
-cin>>numero;
-    if (numero >0) {
-    cout << "EL NUMERO ES POSITIVO" << endl;
-    }else if(numero<0) {
-    cout << "EL NUMERO ES NEGATIVO" << endl;
+    if (numero%2 ==0){
+        cout<<"el numero es par"<<endl;
     }else {
-    cout << "EL NUMERO ES CERO" << endl;
+    cout<<"el numero es impar"<<endl;
     }
+
     return 0;
 }
