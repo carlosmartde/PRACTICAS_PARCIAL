@@ -4,13 +4,16 @@ using namespace std;
 
 int main() {
 
-      int i=1;
+    int numero;
+    int i=1;
 
-     while (i<=20)
-     {
-         cout<<i<<endl;
-            i++;
-     }
+    cout<<"INGRESA UN NUMERO: "<<endl;
+    cin>>numero;
+    while(i<=numero){
+        cout<<i<<endl;
+        i++;
+    }
+
 
     return 0;
 }
