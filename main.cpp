@@ -3,13 +3,19 @@ using namespace std;
 
 
 int main() {
-   int año;
-   cout<<"INGRESE EL ANIO: "<<endl;
-   cin>>año;
-   if ((año%4 ==0 && año%100 !=0)|| (año%400 ==0)){
-       cout<<año<<" SI ES UN ANIO BISIESTO"<<endl;
-   }else{
-       cout<<año<<" NO ES UN ANIO BISIESTO"<<endl;
-   }
+    char letra;
+
+    cout<<"INGRESE UNA LETRA: "<<endl;
+    cin>>letra;
+
+    letra= tolower(letra);
+    if (letra=='a'|| letra=='e'|| letra=='i'|| letra=='o'||letra =='u'){
+        cout<<letra<<" ES UNA VOCAL"<<endl;
+    }else if ((letra>='a' && letra <='z') &&!((letra=='a'|| letra=='e'|| letra=='i'|| letra=='o'||letra =='u'))){
+        cout<<letra<<" ES UNA CONSONANTE"<<endl;
+    }else {
+        cout<<letra<<"NO ES UNA LETRA VALIDA"<<endl;
+    }
+
     return 0;
 }
