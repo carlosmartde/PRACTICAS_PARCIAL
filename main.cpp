@@ -3,19 +3,14 @@ using namespace std;
 
 
 int main() {
-    char letra;
-
-    cout<<"INGRESE UNA LETRA: "<<endl;
-    cin>>letra;
-
-    letra= tolower(letra);
-    if (letra=='a'|| letra=='e'|| letra=='i'|| letra=='o'||letra =='u'){
-        cout<<letra<<" ES UNA VOCAL"<<endl;
-    }else if ((letra>='a' && letra <='z') &&!((letra=='a'|| letra=='e'|| letra=='i'|| letra=='o'||letra =='u'))){
-        cout<<letra<<" ES UNA CONSONANTE"<<endl;
-    }else {
-        cout<<letra<<"NO ES UNA LETRA VALIDA"<<endl;
-    }
+        int nacimiento;
+        cout<<"INGRESE EL ANIO DE NACIMIENTO"<<endl;
+        cin>>nacimiento;
+        if (nacimiento>=1900 && nacimiento<=2024){
+            cout<<nacimiento<<" ES UN ANIO VALIDO"<<endl;
+        }else{
+            cout<<nacimiento<<" NO ES UN ANIO VALIDO"<<endl;
+        }
 
     return 0;
 }
