@@ -5,16 +5,17 @@ using namespace std;
 int main() {
 
     int numero;
-    int suma=0;
-    cout<<"INGRESE UN NUMERO PARA SUMARLO HASTA LLEGAR A 100: "<<endl;
+    int i=2;
+    int suma;
 
-    while(suma<=100){
-        cin>>numero;
-        suma +=numero;
-        cout<<"LA SUMA PARCIAL ES: "<<suma<<endl;
+    cout<<"INGRESE UN NUMERO: "<<endl;
+    cin>>numero;
+
+    while(i<=numero){
+        suma=i+i;
+        cout<<i<<endl;
+        i+=2;
     }
-    cout<<"LA SUMA DE LOS NUMEROS ES :"<<suma<<endl;
-
 
     return 0;
 }
