@@ -4,26 +4,19 @@ using namespace std;
 
 int main() {
 
-    int cantdenumeros;
-    double suma=0.0;
-    double numero;
-    int i=1;
+    int numero;
 
-    cout<<"INGRESE LA CANTIDAD DE NUMEROS QUE DESEA PROMEDEAR: "<<endl;
-    cin>>cantdenumeros;
+    cout<<"INGRESE NUMEROS o INGRESE EL NUMERO CERO PARA SALIR DEL PROGRAMA: "<<endl;
 
-    if (cantdenumeros<=0){
-        cout<<"LA CANTIDAD DE NUMEROS DEBE DE SER AL MENOS 1: "<<endl;
-        return 1;
-            }
-    while(i<=cantdenumeros){
-        cout<<"INGRESE EL NUMERO "<<i<<" :"<<endl;
-        cin>>numero;
-        suma +=numero;
-        i++;
+    while (true) {
+        cin >> numero;
+
+        if (numero == 0) {
+            cout << "SE INGRESO 0 SE DETENDRA EL PROGRAMA" << endl;
+            break;
+
+        }
     }
-    double media= suma / cantdenumeros;
-    cout<<"EL PROMEDIO DE LOS NUMEROS ES: "<<media;
 
     return 0;
 }
