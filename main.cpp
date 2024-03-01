@@ -4,15 +4,15 @@ using namespace std;
 
 int main() {
 
+    int producto=1;
     int numero=1;
-    int i;
-    int cuadrado;
 
     while (numero<=10){
-        cuadrado=numero*numero;
-        cout<<"NUMERO NATURAL :"<<numero<<" AL CUADRADO: "<<cuadrado<<endl;
+        producto *=numero;
         numero++;
     }
+    cout<<"EL PRODUCTO DE LOS PRIMEROS NUMEROS NATURALES ES: "<<producto<<endl;
+
 
     return 0;
 }
