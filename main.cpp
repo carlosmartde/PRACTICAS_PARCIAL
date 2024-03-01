@@ -4,17 +4,14 @@ using namespace std;
 
 int main() {
 
-    int numero;
-    int factorial=1;
+    int numero=100;
     int i;
-
-    cout<<"INGRESE EL NUMERO DEL QUE DESEA SABER EL FACTORIAL: "<<endl;
-    cin>>numero;
+    int suma;
 
     for (i=1; i<=numero; i++){
-        factorial*=i;
+        suma+=i;
     }
-    cout<<"EL FACTORIAL DE "<<numero<<" ES "<<factorial<<endl;
+    cout<<"LA SUMA DE LOS NUMEROS NATURALES DEL 1 AL 100 ES: "<<suma<<endl;
 
     return 0;
 }
