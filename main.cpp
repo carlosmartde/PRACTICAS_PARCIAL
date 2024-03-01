@@ -4,18 +4,14 @@ using namespace std;
 
 int main() {
 
-    int numero;
+    int numero=1;
+    int i;
+    int cuadrado;
 
-    cout<<"INGRESE NUMEROS o INGRESE EL NUMERO CERO PARA SALIR DEL PROGRAMA: "<<endl;
-
-    while (true) {
-        cin >> numero;
-
-        if (numero == 0) {
-            cout << "SE INGRESO 0 SE DETENDRA EL PROGRAMA" << endl;
-            break;
-
-        }
+    while (numero<=10){
+        cuadrado=numero*numero;
+        cout<<"NUMERO NATURAL :"<<numero<<" AL CUADRADO: "<<cuadrado<<endl;
+        numero++;
     }
 
     return 0;
