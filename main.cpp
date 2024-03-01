@@ -4,15 +4,12 @@ using namespace std;
 
 int main() {
 
-    int producto=1;
-    int numero=1;
+    int numero;
 
-    while (numero<=10){
-        producto *=numero;
-        numero++;
+    for (numero=2; numero<=20; numero+=2){
+        cout<<numero<<endl;
+
     }
-    cout<<"EL PRODUCTO DE LOS PRIMEROS NUMEROS NATURALES ES: "<<producto<<endl;
-
 
     return 0;
 }
