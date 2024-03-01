@@ -4,14 +4,19 @@ using namespace std;
 
 int main() {
 
-    int numero=100;
+    int numero;
     int i;
-    int suma;
+
+    cout<<"INGRESE UN NUMERO: "<<endl;
+    cin>>numero;
+
+    cout<<"LOS NUMEROS DIVISORES DE "<<numero<<" SON: ";
 
     for (i=1; i<=numero; i++){
-        suma+=i;
+        if (numero%i==0){
+            cout<<i<<" ";
+        }
     }
-    cout<<"LA SUMA DE LOS NUMEROS NATURALES DEL 1 AL 100 ES: "<<suma<<endl;
 
     return 0;
 }
