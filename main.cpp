@@ -6,16 +6,14 @@ int main() {
 
     int numero;
     int suma=0;
-    cout<<"INGRESE UN NUMERO POSITIVO PARA SUMARLO O UNO NEGATIVO SI DESEA DETENER LA SUMA: "<<endl;
-    cin>>numero;
+    cout<<"INGRESE UN NUMERO PARA SUMARLO HASTA LLEGAR A 100: "<<endl;
 
-    while(numero>=0){
-        suma +=numero;
-        cout<<"SUMA PARCIAL: "<<suma<<endl;
-        cout<<"INGRESA OTRO NUMERO POSITIVO PARA AGREGARLO A LA SUMA O UNO NEGATIVO PARA DETENER LA SUMA: "<<endl;
+    while(suma<=100){
         cin>>numero;
+        suma +=numero;
+        cout<<"LA SUMA PARCIAL ES: "<<suma<<endl;
     }
-    cout<<"LA SUMA DE LOS NUMEROS POSITIVOS ES :"<<suma<<endl;
+    cout<<"LA SUMA DE LOS NUMEROS ES :"<<suma<<endl;
 
 
     return 0;
